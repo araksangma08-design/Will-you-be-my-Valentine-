@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Valentine?</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Jody ❤️</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Will you be my Valentine?</h1>
-        <div class="buttons">
-            <button class="yes-button" onclick="handleYesClick()">Yes</button>
-            <button class="no-button" onclick="handleNoClick()">No</button>
-        </div>
-        <div class="gif_container">
-            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
-        </div>
-    </div>
-    <script src="script.js"></script>
+<body onclick="startMusic()">
+
+<audio id="bgMusic" loop>
+  <source src="https://assets.mixkit.co/music/preview/mixkit-romantic-hopeful-heartbeat-493.mp3">
+</audio>
+
+<div id="confetti"></div>
+
+<div class="card">
+  <h1 id="typing"></h1>
+  <p class="sub">be honest. but choose wisely 😌</p>
+
+  <div class="buttons">
+    <button class="yes" onclick="yesClick()">YES 💖</button>
+    <button class="no" id="noBtn" onclick="noClick()">No</button>
+  </div>
+</div>
+
+<div class="final" id="final">
+  <h1>OKAY THAT’S US 💘</h1>
+  <p>Screenshot this.  
+     Post it.  
+     Let the likes roll.</p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
