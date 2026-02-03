@@ -2,28 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>For Jody ❤️</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onclick="startMusic()">
 
-  <div class="card">
-    <h2>Us together</h2>
+<audio id="bgMusic" loop>
+  <source src="https://assets.mixkit.co/music/preview/mixkit-romantic-hopeful-heartbeat-493.mp3">
+</audio>
 
-    <div class="photo-box">
-      <img src="photo.jpg" alt="Us together">
-    </div>
+<div id="confetti"></div>
 
-    <h1>Jody, will you be my Valentine?</h1>
-    <div class="heart">❤️</div>
+<div class="card">
+  <h1 id="typing"></h1>
+  <p class="sub">be honest. but choose wisely 😌</p>
 
-    <div class="buttons">
-      <button class="yes" onclick="yesClick()">Yes</button>
-      <button class="no" id="noBtn" onclick="noClick()">No</button>
-    </div>
+  <div class="buttons">
+    <button class="yes" onclick="yesClick()">YES 💖</button>
+    <button class="no" id="noBtn" onclick="noClick()">No</button>
   </div>
+</div>
 
-  <script src="script.js"></script>
+<div class="final" id="final">
+  <h1>OKAY THAT’S US 💘</h1>
+  <p>Screenshot this.  
+     Post it.  
+     Let the likes roll.</p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
